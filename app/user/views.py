@@ -3,10 +3,10 @@
 from rest_framework import generics, authentication, permissions
 from rest_framework.settings import api_settings
 from rest_framework.authtoken.views import ObtainAuthToken
-from user.serializers import AuthTokenSerializer
+from .serializers import AuthTokenSerializer
 
 
-from user.serializers import UserSerializer
+from .serializers import UserSerializer
 
 class CreateUserView(generics.CreateAPIView):
     serializer_class = UserSerializer
